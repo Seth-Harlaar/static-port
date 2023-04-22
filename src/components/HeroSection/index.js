@@ -12,7 +12,7 @@ import {
   Spacer
 } from './HeroElements'
 
-// import Image from 'next/image'
+import Image from 'next/image'
 
 import logo from '../../assets/asdf.jpg'
 
@@ -25,7 +25,7 @@ const HeroSection = () => {
 
         <HeroPictureContainer>
           <HeroPicture>
-            {/* <Image src={logo}  /> */}
+            <Image src={logo} unoptimized />
           </HeroPicture>
         </HeroPictureContainer>
 
