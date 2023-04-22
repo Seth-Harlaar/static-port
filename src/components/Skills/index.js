@@ -26,7 +26,7 @@ const SkillCardFcn = ({tog, col, data}) => {
       <SkillCardTitleContainer>
         
         <SkillCardImgWrapper>
-          <SkillCardImg src={data.img}></SkillCardImg>
+          {/* <SkillCardImg src={data.img}></SkillCardImg> */}
         </SkillCardImgWrapper>
 
         <SkillCardTitleWrapper>
