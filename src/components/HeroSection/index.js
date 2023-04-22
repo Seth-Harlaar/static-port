@@ -25,7 +25,7 @@ const HeroSection = () => {
 
         <HeroPictureContainer>
           <HeroPicture>
-            <Image src={logo} unoptimized />
+            {/* <Image src={logo}  /> */}
           </HeroPicture>
         </HeroPictureContainer>
 
