@@ -84,17 +84,12 @@ export const OtherDescription = styled.h1`
 
 `
 
-export const OtherPicture = styled.img`
+export const OtherPicture = styled.div`
   width: 100%;
   object position: 50% top;
   object-fit: cover;
   margin: auto;
 
-  &:hover {
-    &:after {
-      content: "hello there";
-    }
-  }
 `
 
 

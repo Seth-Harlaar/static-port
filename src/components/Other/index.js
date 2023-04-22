@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Image from 'next/image';
 
 import {
   OtherContainer,
@@ -14,12 +15,12 @@ import {
   ExitButton
 } from './OtherElements'
 
-import deepqPreview from '../../images/deep_q_paper.png'
-import hvacPreview from '../../images/hvac.png'
-import inversePreview from '../../images/inverse_quad_preview.jpg'
+import deepqPreview from '../../assets/deep_q_paper.png'
+import hvacPreview from '../../assets/hvac.png'
+import inversePreview from '../../assets/inverse_quad_preview.jpg'
 
-import hvacDoc from '../../papers/hvac.pdf'
-import deepDoc from '../../papers/deepq.pdf'
+// import hvacDoc from '../../assets/papers/hvac.pdf'
+// import deepDoc from '../../assets/papers/deepq.pdf'
 
 const hvacDesc = 'This was a design project me and my partners completed as our capstone project. We designed an automatic HVAC zoning system that could save money and control the temperature of each room.'
 const deepqDesc = 'In this project me and my partner designed a task scheduling algorithm that uses a Deep Q-Network to determine execution order.'
@@ -43,7 +44,9 @@ const OtherTileFcn = ({src, desc, doc}) => {
     <>
       <OtherTile>
         <OtherTilePreviewContainer onClick={openFile}>
-          <OtherPicture src={src}/>
+          <OtherPicture>
+            <Image src={src} unoptimized/>
+          </OtherPicture>
         </OtherTilePreviewContainer>
 
         <OtherFileModal hidden={hidden} onClick={closeFile} id='entireModal'>
@@ -69,12 +72,12 @@ const OtherSection = () => {
 
     {/* add a breaker section between this section and the one above */}
       <OtherContainer id={'other'}>
-        <OtherTitle>other work</OtherTitle>
 
+        <OtherTitle>other work</OtherTitle>
         <OtherTileContainer>
-          <OtherTileFcn src={hvacPreview} desc={hvacDesc} doc={hvacDoc}></OtherTileFcn>
-          <OtherTileFcn src={deepqPreview} desc={deepqDesc} doc={deepDoc}></OtherTileFcn>
-          <OtherTileFcn src={inversePreview} desc={inverseDesc} doc={hvacDoc}></OtherTileFcn>
+          <OtherTileFcn src={hvacPreview} desc={hvacDesc} doc={'../../assets/papers/hvac.pdf'}></OtherTileFcn>
+          <OtherTileFcn src={deepqPreview} desc={deepqDesc} doc={'../../assets/papers/deepq.pdf'}></OtherTileFcn>
+          <OtherTileFcn src={inversePreview} desc={inverseDesc} doc={'../../assets/papers/hvac.pdf'}></OtherTileFcn>
         </OtherTileContainer>
 
       </OtherContainer>
