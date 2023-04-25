@@ -35,7 +35,6 @@ const HeroSection = () => {
           <HeroH3>i build software</HeroH3>
         </HeroText>
 
-
         <HeroButton to="experience"
           smooth={true} duration={500} spy={true}
           exact='true' offset={-80}
@@ -48,7 +47,6 @@ const HeroSection = () => {
           <HeroArrow>^</HeroArrow>
 
         </HeroButton>
-
 
       </HeroContainer>
     </>

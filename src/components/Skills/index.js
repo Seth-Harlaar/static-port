@@ -25,6 +25,7 @@ const SkillCardFcn = ({tog, col, data}) => {
     <SkillCard onClick={tog} small={col}>
       <SkillCardTitleContainer>
         
+        {/* switch images to react-icons */}
         <SkillCardImgWrapper>
           {/* <SkillCardImg src={data.img}></SkillCardImg> */}
         </SkillCardImgWrapper>

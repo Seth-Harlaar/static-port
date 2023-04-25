@@ -16,7 +16,7 @@ export const SkillsColumnContainer = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 0px 100px 50px 100px;
+  // padding: 0px 100px 50px 100px;
 `
 
 export const SkillColumn = styled.div`
@@ -84,7 +84,7 @@ export const SkillCardText = styled.div`
   text-justify: inter-word;
   padding: 0 20px 20px 20px;
   font-size: 2.5vh;
-  height: 100%;
+  // height: 100%;
 `
 
 export const SkillCardTextShort = styled.h1`

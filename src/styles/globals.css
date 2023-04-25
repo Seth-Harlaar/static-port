@@ -16,6 +16,17 @@
   }
 }
 
-body {
+main {
+  width: 100%;
+}
 
+#content {
+  max-width: 1900px;
+  margin: auto;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
 }
