@@ -14,12 +14,12 @@ export const themes = [
     gradientSecond: "#ffffff",
     gradientThird: "#ff930f",
   },
-  // testing
+  // another one
   {
-    background: "purple",
-    dark: "red",
-    light: "yellow",
-    highlight: "green",
+    background: "#2e1c2b",
+    dark: "#050404",
+    light: "#eaeaea",
+    highlight: "#893168",
     barelyVis: "#0000004d",
     moreVis: "#00000099",
     superVis: "#000000cc",
@@ -28,12 +28,12 @@ export const themes = [
     gradientSecond: "#ffffff",
     gradientThird: "#ff930f",
   }, 
-  // another one
+  // testing
   {
-    background: "purple",
-    dark: "red",
-    light: "yellow",
-    highlight: "green",
+    background: "#2b3a67",
+    dark: "#496a81",
+    light: "#66999b",
+    highlight: "#ffc482",
     barelyVis: "#0000004d",
     moreVis: "#00000099",
     superVis: "#000000cc",
