@@ -4,27 +4,31 @@ import HeroSection from '../components/HeroSection';
 import ExperienceSection from '../components/Experience'
 import OtherSection from '../components/Other'
 import SkillsSection from '../components/Skills';
+import NavBar from '../components/NavBar';
 
 import { ThemeProvider } from 'styled-components';
-import {dogWaterTheme, goodTheme} from '../styles/themes.js';
+import {themes} from '../styles/themes.js';
 
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
+  const [theme, updateTheme] = useState(0);
   
-  return (
-    <main>
+  function setNewTheme(newThemeIndex){
+    updateTheme(newThemeIndex);
+  }
 
-      <ThemeProvider theme={goodTheme}>
-        <HeroSection />
-        <ExperienceSection />
-        <OtherSection/>
-        <SkillsSection/>
-      </ThemeProvider>
-    </main>
+
+  return (
+    <ThemeProvider theme={themes[theme]}>
+      <main>
+        <NavBar thmFcn={setNewTheme}/>
+        <div id='content'>
+          <HeroSection />
+          <ExperienceSection />
+          <OtherSection/>
+          <SkillsSection/>
+        </div>
+      </main>
+    </ThemeProvider>
   )
 }
