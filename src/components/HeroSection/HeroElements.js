@@ -17,18 +17,15 @@ export const HeroPictureContainer = styled.div`
   flex-grow: 1;
   display:flex;
   justify-content: center;
-
-  
 `
 
 export const HeroPicture = styled.div`
-  width: 80vh;
+  max-width: 650px;
   
   @media screen and (max-width: 1500px) {
     max-width: 450px;
   }
 `
-
 
 
 export const HeroText = styled.div`
@@ -39,7 +36,10 @@ export const HeroH1 = styled.h1`
   margin: 20px 0 10px 0;
   text-transform: uppercase;
   color: ${props => props.theme.highlight};
-  font-size: 60px;
+  font-size: 80px;
+  @media screen and (max-width: 1500px) {
+    font-size: 60px;
+  }
 `
 export const HeroH2 = styled.h1`
   font-weight: normal;
@@ -73,22 +73,27 @@ export const HeroButton = styled(LinkS)`
   right: 10%;
   bottom: 10%;
 
-  width: 250px;
+  width: 300px;
 
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 15px 20px;
 
   background: ${props => 'linear-gradient(-45deg, '+ props.theme.highlight +' 0%,'+ props.theme.highlight + ' 48%,'+ props.theme.gradientSecond +  ' 50%,'+ props.theme.highlight + ' 52%,'+ props.theme.highlight + ' 100%)'};
   background-size: 1200%;
 
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: ${props => props.theme.light};
 
   &:hover {
     cursor: pointer;
     animation: ${shiftBackground} 3s linear infinite;
+  }
+
+  @media screen and (max-width: 1500px) {
+    font-size: 20px;
+    width: 250px;
   }
 `
 

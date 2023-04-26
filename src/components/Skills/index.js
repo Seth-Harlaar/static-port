@@ -68,7 +68,6 @@ const SkillsSection = () => {
   
   return (
     <>
-
       <SkillContainer id={"skills"}>
 
         <SkillsTitle>skills</SkillsTitle>

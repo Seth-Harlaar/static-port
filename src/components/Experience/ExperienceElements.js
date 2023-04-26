@@ -93,7 +93,6 @@ export const ExperienceCardContainer = styled.div`
 
 export const ExperienceCardWrapper = styled.div`
   position: relative;
-  transition: 1s;
   
   min-height: 40vh;
   width: 43%;
@@ -105,26 +104,26 @@ export const ExperienceCardWrapper = styled.div`
   }
 
 
+  &:hover {
+  scale: 1.08;
+  }
+
+  &:hover ${WorkText}{
+    color: ${props => props.theme.superVis};
+    top: -125px;
+  }
+
+  &:hover ${SchoolText}{
+    color: ${props => props.theme.superVis};
+    top: -125px;
+  }
+
+  &:hover ${NonTechText}{
+    color: ${props => props.theme.superVis};
+    top: 100%;
+  }
   // xl
   @media sreen and (min-wdith: 1500px) {
-    &:hover {
-    scale: 1.08;
-    }
-
-    &:hover ${WorkText}{
-      color: ${props => props.theme.superVis};
-      top: -125px;
-    }
-  
-    &:hover ${SchoolText}{
-      color: ${props => props.theme.superVis};
-      top: -125px;
-    }
-  
-    &:hover ${NonTechText}{
-      color: ${props => props.theme.superVis};
-      top: 100%;
-    }
   }
 `
 

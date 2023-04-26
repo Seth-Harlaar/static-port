@@ -53,8 +53,8 @@ export const SkillCardTitleContainer = styled.div`
 
 
 export const SkillCardImgWrapper = styled.div`
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
   background: ${props => props.theme.highlight};
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ export const SkillCardTitle = styled.h1`
   width: 80%;
   text-align: center;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 30px;
   border-bottom: 4px solid ${props => props.theme.highlight};
 
   @media screen and (max-width: 1500px){
@@ -88,6 +88,12 @@ export const SkillCardText = styled.div`
   text-align: justify;
   text-justify: inter-word;
   padding-bottom: 10px;
+
+  font-size: 23px;
+  
+  @media screen and (max-width: 1500px){
+    font-size: 14px;
+  }
 `
 
 export const SkillCardTextShort = styled.h1`
@@ -96,13 +102,8 @@ export const SkillCardTextShort = styled.h1`
   padding: 10px 20px 0 20px;
 
   transition: 0.25s;
-  font-size: 14px;
   transform: ${({ small }) => (small ? 'translateY(0px)' : 'translateY(-200px)')};
   opacity: ${({ small }) => (small ? '1' : '0')};
-
-  @media screen and (max-width: 1500px){
-    font-size: 14px;
-  }
 `
 
 export const SkillCardTextLong = styled.h1`
@@ -111,13 +112,8 @@ export const SkillCardTextLong = styled.h1`
   padding: 0 20px;
 
   transition: 0.25s;
-  font-size: 14px;
   transform: ${({ small }) => (small ? 'translateY(-200px)' : 'translateY(0)')};
   opacity: ${({ small }) => (small ? '0' : '1')};
-
-  @media screen and (max-width: 1500px){
-    font-size: 14px;
-  }
 `
 
 
@@ -129,7 +125,7 @@ export const SkillCardArrow = styled.div`
   text-align: right;
   margin: 0px 20px 10px 0;
   flex-grow: 1;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: ${props => props.theme.highlight};
   transform: scale(1, ${props => props.small ? -1 : 1});

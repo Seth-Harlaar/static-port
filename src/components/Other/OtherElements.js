@@ -42,8 +42,8 @@ export const OtherTilePreviewContainer = styled.div`
   
   position: relative;
 
-  height: 52vh;
-  width: 40vh;
+  height: 500px;
+  width: 360px;
   margin: 0 auto 10px auto;
   overflow: hidden;
   scale: 1;
