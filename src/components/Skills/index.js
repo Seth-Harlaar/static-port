@@ -35,11 +35,11 @@ const SkillCardFcn = ({tog, col, data}) => {
         </SkillCardTitleWrapper>
 
       </SkillCardTitleContainer>
-        <SkillCardText>
-          <SkillCardTextShort small={col}>{data.shortDesc}</SkillCardTextShort>
-          <SkillCardTextLong small={col}>{data.longDesc}</SkillCardTextLong>
-        </SkillCardText>
-        
+     
+      <SkillCardText small={col}>
+        <SkillCardTextShort small={col}>{data.shortDesc}</SkillCardTextShort>
+        <SkillCardTextLong small={col}>{data.longDesc}</SkillCardTextLong>
+      </SkillCardText>
 
       <SkillCardArrow small={col}>
         ^

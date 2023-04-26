@@ -5,9 +5,10 @@ import { Link as LinkS } from 'react-scroll';
 export const HeroContainer = styled.div`
   background: ${props => props.theme.background};
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 5vh 50px 5vh 50px;
+  gap: 20px;
+  padding: 5vh 50px;
   height: 100vh;
   overflow: hidden;
 `
@@ -16,12 +17,16 @@ export const HeroPictureContainer = styled.div`
   flex-grow: 1;
   display:flex;
   justify-content: center;
+
+  
 `
 
 export const HeroPicture = styled.div`
-  width: 100%;
-  max-width: 700px;
-  height: auto;
+  width: 80vh;
+  
+  @media screen and (max-width: 1500px) {
+    max-width: 450px;
+  }
 `
 
 
@@ -64,22 +69,20 @@ const shiftBackground = keyframes`
 `
 
 export const HeroButton = styled(LinkS)`
-  position: relative;
-  top: 25vh;
-  right: 20vh;
-  height: 8vh;
-  width: 18vw;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+
+  width: 250px;
 
   display: flex;
   align-items: center;
   padding: 20px;
 
-  background: ${props => props.theme.highlight};
-  // background linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
   background: ${props => 'linear-gradient(-45deg, '+ props.theme.highlight +' 0%,'+ props.theme.highlight + ' 48%,'+ props.theme.gradientSecond +  ' 50%,'+ props.theme.highlight + ' 52%,'+ props.theme.highlight + ' 100%)'};
   background-size: 1200%;
 
-  font-size: 3vh;
+  font-size: 20px;
   font-weight: bold;
   color: ${props => props.theme.light};
 
@@ -91,10 +94,9 @@ export const HeroButton = styled(LinkS)`
 
 
 
-export const Spacer = styled.div`
-  flex-grow: 1;
-`
 
 export const HeroArrow = styled.div`
-  transform: scale(1, -1);  
+  flex-grow: 1;
+  text-align: right;
+  transform: scale(1, -1);
 `

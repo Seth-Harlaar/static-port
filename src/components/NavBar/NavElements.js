@@ -86,6 +86,7 @@ export const ThemePicker = styled.div`
   transition: 0.2s;
 
   opacity: ${props => props.vis ? 1 : 0};
+  pointer-events: ${props => props.vis ? 'all' : 'none'};
 `
 
 export const ExitThemeButton = styled.div`
@@ -94,7 +95,7 @@ export const ExitThemeButton = styled.div`
   right: 19px;
   font-size: 25px;
   font-weight: bold;
-  color: ${props => props.theme.light};
+  color: ${props => props.theme.barelyVis};
 
   &:hover {
     cursor: pointer;

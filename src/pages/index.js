@@ -17,10 +17,11 @@ export default function Home() {
     updateTheme(newThemeIndex);
   }
 
+  
 
   return (
     <ThemeProvider theme={themes[theme]}>
-      <main>
+      <main style={{background: themes[theme].background}}>
         <NavBar thmFcn={setNewTheme}/>
         <div id='content'>
           <HeroSection />

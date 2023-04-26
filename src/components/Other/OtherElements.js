@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const OtherContainer = styled.div`
   background: ${props => props.theme.background};
   padding: 0 50px 0 50px;
-  height: 90vh;
+  
 `
 
 
@@ -59,6 +59,11 @@ export const OtherTilePreviewContainer = styled.div`
     scale: 1.07;
   }
 
+  @media screen and (max-width: 1500px) {
+    height: 325px;
+    width: 250px;
+  }
+
   &:after {
     content:"";
     position: absolute;
@@ -81,7 +86,9 @@ export const OtherDescription = styled.h1`
   text-justify: inter-word;
   color: ${props => props.theme.light};
 
-
+  @media screen and (max-width: 1500px) {
+    font-size: 15px;
+  }
 `
 
 export const OtherPicture = styled.div`

@@ -21,19 +21,12 @@ export const skillData = {
       title: 'Node.js',
       img:  require('../../assets/icons/node1.png'),
       shortDesc:  'Node.js is the backbone of many server-side web applications.',
-      longDesc:   'It is also used for this website (your looking at the static version though thanks to), along with a GPS data analytics site I built during my Software Systems Development and Integration course at UofG.',
+      longDesc:   'It is also used for this website (your looking at the static version though thanks to Next.js), along with a GPS data analytics site I built during my Software Systems Development and Integration course at UofG.',
       icon: 'FaNodeJs'
     },
  
-    {
-      title: 'Math',
-      img:  require('../../assets/icons/math1.png'),
-      shortDesc:  'Math is Math! and it has huge implications for computers.',
-      longDesc:   'It is also on of my favorite subjects. In high school I joined the math club and was the school champion for our school.',
-      icon: 'TbMathSymbols'
-    },
     
-
+    
     {
       title: 'OOP',
       img:  require('../../assets/icons/oop0.png'),
@@ -41,7 +34,14 @@ export const skillData = {
       longDesc:   'From when I started programming in 2013 I have been using OOP to create applications and software. I have also taken OOP classes during my time at UofG',
       icon: 'GrTree'
     },
-
+    
+    {
+      title: 'Math',
+      img:  require('../../assets/icons/math1.png'),
+      shortDesc:  'Math is Math! and it has huge implications for computers.',
+      longDesc:   'It is also on of my favorite subjects. In high school I joined the math club and was the school champion for our school.',
+      icon: 'TbMathSymbols'
+    },
     {
       title: 'Flutter',
       img:  require('../../assets/icons/flutter2.png'),

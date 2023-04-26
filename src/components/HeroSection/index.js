@@ -35,17 +35,13 @@ const HeroSection = () => {
           <HeroH3>i build software</HeroH3>
         </HeroText>
 
+
         <HeroButton to="experience"
           smooth={true} duration={500} spy={true}
-          exact='true' offset={-80}
+          exact='true' offset={-80} 
         >
-          <div>
-            More Info
-          </div>
-
-          <Spacer/>
+          <div> More Info </div>
           <HeroArrow>^</HeroArrow>
-
         </HeroButton>
 
       </HeroContainer>
