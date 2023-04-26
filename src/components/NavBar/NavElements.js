@@ -82,12 +82,21 @@ export const ThemePicker = styled.div`
   align-items: center;
   height: 250px;
   width: 350px;
-  background: black;
-  border-radius: 20px;
 
   transition: 0.2s;
 
   opacity: ${props => props.vis ? 1 : 0};
 `
 
+export const ExitThemeButton = styled.div`
+  position: absolute;
+  top: 5px;
+  right: 19px;
+  font-size: 25px;
+  font-weight: bold;
+  color: ${props => props.theme.light};
 
+  &:hover {
+    cursor: pointer;
+  }
+`

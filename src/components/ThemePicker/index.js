@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 
 
 import { 
@@ -33,24 +33,25 @@ const ThemeSelection = ({thmFcn}) => {
   return (
     <>
       <ContentWrapper>
+        
         <ThemeTitle>
           Select a theme:
         </ThemeTitle>
 
         <ThemeMenu>
-          <ThemeItem>
-            <ThemeButton onClick={() => updateThemes(0)} sel={themes[0]}/>
-            <ThemeText>asdf</ThemeText>
+          <ThemeItem sel={themes[0]} onClick={() => updateThemes(0)} >
+            <ThemeButton sel={themes[0]}/>
+            <ThemeText>The Original</ThemeText>
           </ThemeItem>
 
-          <ThemeItem>
-            <ThemeButton onClick={() => updateThemes(1)} sel={themes[1]}/>
-            <ThemeText>asdf</ThemeText>
+          <ThemeItem sel={themes[1]} onClick={() => updateThemes(1)} >
+            <ThemeButton sel={themes[1]}/>
+            <ThemeText>Another</ThemeText>
           </ThemeItem>
 
-          <ThemeItem>
-            <ThemeButton onClick={() => updateThemes(2)} sel={themes[2]}/>
-            <ThemeText>asdf</ThemeText>
+          <ThemeItem sel={themes[2]} onClick={() => updateThemes(2)} >
+            <ThemeButton sel={themes[2]}/>
+            <ThemeText>Cold</ThemeText>
           </ThemeItem>
 
         </ThemeMenu>

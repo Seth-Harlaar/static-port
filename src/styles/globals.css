@@ -27,6 +27,7 @@ main {
 
 
 * {
+  transition: 0.2s;
   margin: 0;
   padding: 0;
 }

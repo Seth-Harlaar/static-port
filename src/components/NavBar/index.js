@@ -8,7 +8,8 @@ import {
   NavLink,
   NavHome,
   ThemeButton,
-  ThemePicker
+  ThemePicker,
+  ExitThemeButton,
 } from './NavElements.js'
 
 
@@ -16,6 +17,9 @@ const NavBar = ({thmFcn}) => {
   const [themePicker, setThemePicker] = useState(false);
   const toggleTheme = () => {
     setThemePicker(!themePicker);
+  }
+  const disableThemePicker = () => {
+    setThemePicker(false);
   }
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -68,6 +72,7 @@ const NavBar = ({thmFcn}) => {
         </NavList>
 
         <ThemePicker vis={themePicker}>
+          <ExitThemeButton onClick={disableThemePicker}>x</ExitThemeButton>
           <ThemeSelection thmFcn={thmFcn}/>
         </ThemePicker>
 

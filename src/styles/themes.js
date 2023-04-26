@@ -28,12 +28,12 @@ export const themes = [
     gradientSecond: "#ffffff",
     gradientThird: "#ff930f",
   }, 
-  // testing
+  // grayscale
   {
-    background: "#2b3a67",
-    dark: "#496a81",
-    light: "#66999b",
-    highlight: "#ffc482",
+    background: "#212529",
+    dark: "#1C1F22",
+    light: "#FFFFFF",
+    highlight: "#527784",
     barelyVis: "#0000004d",
     moreVis: "#00000099",
     superVis: "#000000cc",
