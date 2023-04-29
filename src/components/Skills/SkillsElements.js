@@ -5,17 +5,29 @@ export const SkillsTitle = styled.h1`
   font-weight: normal;
   color: var(--barely-visible);
   color: ${props => props.theme.moreVis};
+
+  @media screen and (max-width: 768px){
+    font-size: 65px;
+  }
 `
 
 export const SkillContainer = styled.div`
   background: ${props => props.theme.background};
   padding: 0 20px 100px 20px;
+
+  @media screen and (max-width: 768px){
+    padding: 0 20px 100px 20px;
+  }
 `
 
 export const SkillsColumnContainer = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  
+  @media screen and (max-width: 768px){
+    gap: 10px;
+  }
 `
 
 export const SkillColumn = styled.div`
@@ -59,6 +71,23 @@ export const SkillCardImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1500px){
+    height: 60px;
+    width: 60px;
+  }
+
+  @media screen and (max-width: 1024px){
+    height: 40px;
+    width: 40px;
+  }
+
+  // switch to single column at < 768px
+
+  @media screen and (max-width: 768px){
+    height: 40px;
+    width: 40px;
+  }
 `
 
 export const SkillCardImg = styled.img`
@@ -79,7 +108,11 @@ export const SkillCardTitle = styled.h1`
   border-bottom: 4px solid ${props => props.theme.highlight};
 
   @media screen and (max-width: 1500px){
-    font-size: 20px;
+    font-size: 22.5px;
+  }
+
+  @media screen and (max-width: 1024px){
+    font-size: 15px;
   }
 `
 
@@ -93,6 +126,10 @@ export const SkillCardText = styled.div`
   
   @media screen and (max-width: 1500px){
     font-size: 14px;
+  }
+
+  @media screen and (max-width: 768px){
+    font-size: 10px;
   }
 `
 

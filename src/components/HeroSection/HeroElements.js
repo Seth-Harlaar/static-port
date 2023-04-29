@@ -11,6 +11,10 @@ export const HeroContainer = styled.div`
   padding: 5vh 50px;
   height: 100vh;
   overflow: hidden;
+
+  @media screen and (max-width: 768px){
+    font-size: 20px;
+  }
 `
 
 export const HeroPictureContainer = styled.div`
@@ -25,6 +29,10 @@ export const HeroPicture = styled.div`
   @media screen and (max-width: 1500px) {
     max-width: 450px;
   }
+
+  @media screen and (max-width: 768px) {
+    max-width: 350px;
+  }
 `
 
 
@@ -37,8 +45,18 @@ export const HeroH1 = styled.h1`
   text-transform: uppercase;
   color: ${props => props.theme.highlight};
   font-size: 80px;
+
+
   @media screen and (max-width: 1500px) {
     font-size: 60px;
+  }
+
+  @media screen and (max-width: 768px){
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 360px){
+    font-size: 20px;
   }
 `
 export const HeroH2 = styled.h1`
@@ -46,12 +64,20 @@ export const HeroH2 = styled.h1`
   text-transform: uppercase;
   color: ${props => props.theme.light};
   font-size: 20px;
+  
+  @media screen and (max-width: 768px){
+    font-size: 20px;
+  }
 `
 export const HeroH3 = styled.h1`
   font-weight: normal;
   text-transform: uppercase;
   color: ${props => props.theme.light};
   font-size: 40px;
+  
+  @media screen and (max-width: 768px){
+    font-size: 20px;
+  }
 `
 
 
@@ -94,6 +120,11 @@ export const HeroButton = styled(LinkS)`
   @media screen and (max-width: 1500px) {
     font-size: 20px;
     width: 250px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    font-size: 15px;
+    width: 180px;
   }
 `
 

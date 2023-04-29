@@ -8,6 +8,10 @@ export const ExperienceTitle = styled.div`
   font-size: 140px;
   font-weight: normal;
   color: ${props => props.theme.moreVis};
+
+  @media screen and (max-width: 768px){
+    font-size: 65px;
+  }
 `
 
 
@@ -25,10 +29,15 @@ export const WorkText = styled.h1`
   color: ${props => props.theme.barelyVis};
   z-index: 1;
   
+  
   @media screen and (max-width: 1500px) {
     position: static;
     font-size: 70px;
     color: ${props => props.theme.superVis};
+  }
+
+  @media screen and (max-width: 768px){
+    font-size: 40px;
   }
 `
 export const SchoolText = styled.h1`
@@ -49,6 +58,10 @@ export const SchoolText = styled.h1`
     font-size: 70px;
     color: ${props => props.theme.superVis};
   }
+  
+  @media screen and (max-width: 768px){
+    font-size: 40px;
+  }
 `
 export const NonTechText = styled.h1`   
   position: absolute;
@@ -59,7 +72,7 @@ export const NonTechText = styled.h1`
   transition: 0.5s;
   
   font-weight: normal;
-  font-size: 100px;
+  font-size: 98px;
   color: ${props => props.theme.barelyVis};
   z-index: 1;
   
@@ -68,12 +81,20 @@ export const NonTechText = styled.h1`
     font-size: 70px;
     color: ${props => props.theme.superVis};
   }
+
+  @media screen and (max-width: 768px){
+    font-size: 40px;
+  }
 `
 
 
 export const ExperienceContainer = styled.div`
   background: ${props => props.theme.background};
   padding-bottom: 150px;
+
+  @media screen and (max-width: 1024px){
+    padding: 0 20px;
+  }
 `
 
 
@@ -94,7 +115,7 @@ export const ExperienceCardContainer = styled.div`
 export const ExperienceCardWrapper = styled.div`
   position: relative;
   
-  min-height: 40vh;
+  min-height: 400px;
   width: 43%;
 
   // large

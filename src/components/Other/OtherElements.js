@@ -12,6 +12,10 @@ export const OtherTitle = styled.h1`
   font-size: 140px;
   font-weight: normal;
   color: ${props => props.theme.moreVis};
+
+  @media screen and (max-width: 768px){
+    font-size: 65px;
+  }
 `
 
 
@@ -64,6 +68,11 @@ export const OtherTilePreviewContainer = styled.div`
     width: 250px;
   }
 
+  @media screen and (max-width: 768px){
+    height: 234px;
+    width: 180px;
+  }
+
   &:after {
     content:"";
     position: absolute;
@@ -87,7 +96,7 @@ export const OtherDescription = styled.h1`
   color: ${props => props.theme.light};
 
   @media screen and (max-width: 1500px) {
-    font-size: 15px;
+    font-size: 13px;
   }
 `
 
