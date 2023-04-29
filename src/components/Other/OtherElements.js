@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const OtherContainer = styled.div`
   background: ${props => props.theme.background};
   padding: 0 50px 0 50px;
-  height: 90vh;
+  
 `
 
 
@@ -12,6 +12,10 @@ export const OtherTitle = styled.h1`
   font-size: 140px;
   font-weight: normal;
   color: ${props => props.theme.moreVis};
+
+  @media screen and (max-width: 768px){
+    font-size: 65px;
+  }
 `
 
 
@@ -42,8 +46,8 @@ export const OtherTilePreviewContainer = styled.div`
   
   position: relative;
 
-  height: 52vh;
-  width: 40vh;
+  height: 500px;
+  width: 360px;
   margin: 0 auto 10px auto;
   overflow: hidden;
   scale: 1;
@@ -57,6 +61,16 @@ export const OtherTilePreviewContainer = styled.div`
   &:hover {
     cursor: pointer;
     scale: 1.07;
+  }
+
+  @media screen and (max-width: 1500px) {
+    height: 325px;
+    width: 250px;
+  }
+
+  @media screen and (max-width: 768px){
+    height: 234px;
+    width: 180px;
   }
 
   &:after {
@@ -81,7 +95,9 @@ export const OtherDescription = styled.h1`
   text-justify: inter-word;
   color: ${props => props.theme.light};
 
-
+  @media screen and (max-width: 1500px) {
+    font-size: 13px;
+  }
 `
 
 export const OtherPicture = styled.div`

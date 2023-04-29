@@ -108,24 +108,24 @@ const ExperienceSection = () => {
         <ExperienceCardContainer>
           
           <ExperienceCardWrapper>
+            <WorkText>work exp</WorkText>
             <ExperienceCard>
               <WorkExp></WorkExp>
             </ExperienceCard>
-            <WorkText>work exp</WorkText>
           </ExperienceCardWrapper>
 
           <ExperienceCardWrapper>
+            <SchoolText>school</SchoolText>
             <ExperienceCard>
               <SchoolWork></SchoolWork>
             </ExperienceCard>
-            <SchoolText>school</SchoolText>
           </ExperienceCardWrapper>
 
           <ExperienceCardWrapper>
+            <NonTechText>non-tech work</NonTechText>
             <ExperienceCard>
               <NonTechWork></NonTechWork>
             </ExperienceCard>
-            <NonTechText>non-tech work</NonTechText>
           </ExperienceCardWrapper>
 
         </ExperienceCardContainer>

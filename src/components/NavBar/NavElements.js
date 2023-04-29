@@ -31,6 +31,10 @@ export const NavHome = styled.div`
   color: ${props => props.theme.highlight};
 
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px){
+    font-size: 12px;
+  }
 `
 
 export const NavList = styled.div`
@@ -39,6 +43,10 @@ export const NavList = styled.div`
   right: calc(3vw - 20px);
 
   display: flex;
+
+  @media screen and (max-width: 768px){
+    right: 30px;
+  }
 `
 
 export const NavLink = styled(LinkS)`
@@ -57,6 +65,11 @@ export const NavLink = styled(LinkS)`
   &.active {
     border-bottom: ${props => '5px solid'};
   }
+
+  @media screen and (max-width: 768px){
+    font-size: 12px;
+    padding: 7px;
+  }
 `
 
 export const ThemeButton = styled.div`
@@ -70,6 +83,11 @@ export const ThemeButton = styled.div`
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px){
+    font-size: 12px;
+    padding: 0;
   }
 `
 
@@ -86,6 +104,11 @@ export const ThemePicker = styled.div`
   transition: 0.2s;
 
   opacity: ${props => props.vis ? 1 : 0};
+  pointer-events: ${props => props.vis ? 'all' : 'none'};
+
+  @media screen and (max-width: 768px){
+    width: 300px;
+  }
 `
 
 export const ExitThemeButton = styled.div`
@@ -94,7 +117,7 @@ export const ExitThemeButton = styled.div`
   right: 19px;
   font-size: 25px;
   font-weight: bold;
-  color: ${props => props.theme.light};
+  color: ${props => props.theme.barelyVis};
 
   &:hover {
     cursor: pointer;
